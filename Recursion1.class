@@ -1,0 +1,21 @@
+// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+import java.util.Scanner;
+
+public class Recursion1 {
+   public Recursion1() {
+      Scanner var1 = new Scanner(System.in);
+      System.out.print("Enter a number: ");
+      int var2 = var1.nextInt();
+      int var3 = factorial(var2);
+      System.out.println("Factorial of " + var2 + " is " + var3);
+   }
+
+   static int factorial(int var0) {
+      return var0 == 0 ? 1 : var0 * factorial(var0 - 1);
+   }
+
+   public static void main(String[] var0) {
+      Recursion1 var1 = new Recursion1();
+      factorial(5);
+   }
+}
