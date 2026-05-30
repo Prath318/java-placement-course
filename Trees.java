@@ -25,7 +25,6 @@ public class Trees {
         return root;
     }
 
-    // 🔎 Search method
     public boolean search(Node root, int key) {
         if (root == null) return false;
         if (root.data == key) return true;
