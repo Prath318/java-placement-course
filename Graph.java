@@ -89,7 +89,7 @@ public class Graph {
     }
 
     //delete node from graph
-    
+
     public void deletedNode(String del) {
         if (!nodes.contains(del)) {
             System.out.println("Node is not present in graph");
@@ -108,6 +108,8 @@ public class Graph {
             System.out.println("Node deleted successfully");
         }
     }
+
+    //print graph
 
     public void printGraph() {
         System.out.print("  ");
