@@ -72,7 +72,7 @@ public class Graph {
     }
 
     //add directed weighted edge to graph
-    
+
     public void addEdgeDirectedWeighted(String v1, String v2, int w) {
         if (!nodes.contains(v1)) {
             System.out.println(v1 + " is not available in graph");
@@ -88,6 +88,8 @@ public class Graph {
         }
     }
 
+    //delete node from graph
+    
     public void deletedNode(String del) {
         if (!nodes.contains(del)) {
             System.out.println("Node is not present in graph");
