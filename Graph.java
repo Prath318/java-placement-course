@@ -14,6 +14,7 @@ public class Graph {
     }
 
     //add node to graph
+
     public void addNode(String v) {
         if (nodes.contains(v)) {
             System.out.println("Node already present");
@@ -35,7 +36,7 @@ public class Graph {
             System.out.println("Node added successfully");
         }
     }
-
+//add edge to graph
     public void addEdge(String v1, String v2) {
         if (!nodes.contains(v1)) {
             System.out.println(v1 + " is not available in graph");
@@ -51,6 +52,8 @@ public class Graph {
             System.out.println("Edge added successfully");
         }
     }
+
+//add undirected weighted edge to graph
 
     public void addEdgeUndirectedWeighted(String v1, String v2, int w) {
         if (!nodes.contains(v1)) {
